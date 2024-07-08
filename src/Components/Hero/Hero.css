@@ -2,7 +2,7 @@
     width: '100%';
     min-height: 105vh;
     /* background: grey; */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url('../../assets/background.png');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url('../../assets/background.jpg');
     background-size: cover;
     background-position: center;
     color: #000000;
