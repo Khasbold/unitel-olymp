@@ -24,9 +24,9 @@ const Medal3D = ({tab, path}) => {
   return (
     <Canvas style={{ height: '320px', width: '320px' }} camera={{ position: [0, 0, 10], fov: 30 }}>
       <ambientLight intensity={0.5} />
-      <directionalLight position={[0, 5, 5]} />
+      <directionalLight position={[0, 25, 45]} />
       <SpinningModel modelPath={path} />
-      <OrbitControls enableZoom />
+      <OrbitControls enableZoom={false} />
     </Canvas>
   );
 };

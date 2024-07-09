@@ -105,10 +105,10 @@ const Tabs = () => {
             <Content id="content">
                 <TabContent active={activeTab === '#/one'} id="one">
                     <Grid container padding={2}>
-                        <Grid item xs={6} md={6} lg={6} >
-                            {activeTab === '#/one' && (<Medal tab={activeTab} path="1968_mexico_silver.glb" />)}
+                        <Grid item xs={6} md={12} lg={6} >
+                            {activeTab === '#/one' && (<Medal tab={activeTab} path="1968_mexicooo.glb" />)}
                         </Grid>
-                        <Grid xs={6} md={6} lg={6} sx={{ textAlign: 'left' }}>
+                        <Grid xs={6} md={12} lg={6} sx={{ textAlign: 'left' }}>
                             <div style={{ fontSize: !isDesktop ? '10px' : '40px' }}><b>Монголын анхны медаль</b></div>
                             <div style={{ fontSize: !isDesktop ? '10px' : '10px' }}><i>Мехикогийн медаль</i></div>
                             <Stack direction={'row'}>

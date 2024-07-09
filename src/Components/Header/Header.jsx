@@ -34,7 +34,7 @@ function Header() {
                         <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '25px', paddingTop: '430px', color: 'white' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
                     </Grid>
                     <Grid xs={12} md={12} lg={12}>
-                        <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '25px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая.</div>
+                        <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '25px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
                     </Grid>
                 </Grid>
             </Box>
