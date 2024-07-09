@@ -106,7 +106,7 @@ const Tabs = () => {
                 <TabContent active={activeTab === '#/one'} id="one">
                     <Grid container padding={2}>
                         <Grid item xs={6} md={6} lg={6} >
-                            {activeTab === '#/one' && (<Medal tab={activeTab} path="1988.glb" />)}
+                            {activeTab === '#/one' && (<Medal tab={activeTab} path="1968_mexico_silver.glb" />)}
                         </Grid>
                         <Grid xs={6} md={6} lg={6} sx={{ textAlign: 'left' }}>
                             <div style={{ fontSize: !isDesktop ? '10px' : '40px' }}><b>Монголын анхны медаль</b></div>
@@ -122,10 +122,16 @@ const Tabs = () => {
                     </Grid>
                 </TabContent>
                 <TabContent active={activeTab === '#/two'} id="two">
-                    {activeTab === '#/two' && (<Medal tab={activeTab} path="1968_mexico_silver.glb" />)}
+                    {activeTab === '#/two' && (<Medal tab={activeTab} path="1980_moskva_silver.glb" />)}
                 </TabContent>
                 <TabContent active={activeTab === '#/three'} id="three">
-                    Tabs, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq
+                    {activeTab === '#/three' && (<Medal tab={activeTab} path="1988_seoul_bronze.glb" />)}
+                </TabContent>
+                <TabContent active={activeTab === '#/four'} id="four">
+                    {activeTab === '#/four' && (<Medal tab={activeTab} path="1992_barcelona_bronze.glb" />)}
+                </TabContent>
+                <TabContent active={activeTab === '#/five'} id="five">
+                    {activeTab === '#/five' && (<Medal tab={activeTab} path="beijing_v3.glb" />)}
                 </TabContent>
             </Content>
         </Wrap >
