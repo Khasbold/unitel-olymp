@@ -46,7 +46,6 @@ function Header() {
                     {/* <Icon sx={{ fontSize: 80, color: '#46C800' }}>expand_circle_down_icon</Icon> */}
                     <Card sx={{ height: '800px', alignItems: 'flex-start', borderRadius: '80px', display: 'flex', justifyContent: 'center', background: '#F6F6F6' }}>
                         <div className='space'>
-
                             <CardHero />
                         </div>
 
@@ -54,7 +53,6 @@ function Header() {
                 </div>
             </Box >
             <Box>
-
             </Box>
 
         </div>

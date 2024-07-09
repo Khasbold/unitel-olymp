@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import useResponsive from '../useResponsive';
 import MedalPlaceholder from '../../assets/MedalPlaceholder.svg';
 import Icon1 from '../../assets/icon1.png';
+import Medal from '../MedalFinal2/MedalFinal2';
 const TabsContainer = styled.ul`
   list-style: none;
   display: flex;
@@ -105,7 +106,7 @@ const Tabs = () => {
                 <TabContent active={activeTab === '#/one'} id="one">
                     <Grid container padding={2}>
                         <Grid item xs={6} md={6} lg={6} >
-                            <img src={MedalPlaceholder} alt="My Icon" width={'300px'} />
+                            {activeTab === '#/one' && (<Medal tab={activeTab} />)}
                         </Grid>
                         <Grid xs={6} md={6} lg={6} sx={{ textAlign: 'left' }}>
                             <div style={{ fontSize: !isDesktop ? '10px' : '40px' }}><b>Монголын анхны медаль</b></div>
@@ -121,7 +122,7 @@ const Tabs = () => {
                     </Grid>
                 </TabContent>
                 <TabContent active={activeTab === '#/two'} id="two">
-                    Sexy sexy consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq
+                    222222222
                 </TabContent>
                 <TabContent active={activeTab === '#/three'} id="three">
                     Tabs, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq
