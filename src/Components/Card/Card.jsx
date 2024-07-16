@@ -221,7 +221,7 @@ const Tabs = () => {
                 <Content id="content" className={!isDesktop && activeTab === '#/one' ? 'firstBorder' : !isDesktop && activeTab === '#/five' ? 'lastBorder' : 'allBorder'}>
                     <TabContent active={activeTab === '#/one'} id="one" sx={{ height: !isDesktop ? '500px' : '700px' }} >
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{paddingLeft: !isDesktop ? '' : '140px'}} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/one' && (<Medal tab={activeTab} path="mexico-1968.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -239,7 +239,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/two'} id="two" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{paddingLeft: !isDesktop ? '' : '140px'}} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/two' && (<Medal tab={activeTab} path="moscow-1980.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -257,7 +257,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/three'} id="three" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{paddingLeft: !isDesktop ? '' : '140px'}} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/three' && (<Medal tab={activeTab} path="seoul-1988.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -275,7 +275,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/four'} id="four" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{paddingLeft: !isDesktop ? '' : '140px'}} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/four' && (<Medal tab={activeTab} path="barcelona-1992.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -293,7 +293,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/five'} id="five" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{paddingLeft: !isDesktop ? '' : '140px'}} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/five' && (<Medal tab={activeTab} path="beijing-2008.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -322,30 +322,30 @@ const Tabs = () => {
                     <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
                         <Stack container>
                             {!isDesktop ? (
-                                <Stack direction={'column'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                    <div style={{ fontSize: '55px', paddingTop: '10px', textAlign: 'center', color: '#61c761' }}>
+                                <Stack direction={'column'} sx={{ justifyContent: 'center', paddingLeft: '20px' }} spacing={3} >
+                                    <div style={{ fontSize: '35px', paddingTop: '10px', float: 'left', color: '#61c761' }}>
                                         <b>2024MB</b>
                                     </div>
-                                    <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
+                                    <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal2008} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
-                                            <div style={{ fontSize: '60px', fontWeight: '600', marginLeft: '0px', marginRight: '20px', paddingTop: '5px' }}>
+                                            <img src={Medal2008} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
+                                            <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
                                                 x3
                                             </div>
                                         </Stack>
                                     </div>
-                                    <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
+                                    <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal1980} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
-                                            <div style={{ fontSize: '60px', fontWeight: '600', marginLeft: '0px', marginRight: '20px', paddingTop: '5px' }}>
+                                            <img src={Medal1980} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
+                                            <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
                                                 x2
                                             </div>
                                         </Stack>
                                     </div>
-                                    <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
+                                    <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal1988} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
-                                            <div style={{ fontSize: '60px', fontWeight: '600', marginLeft: '0px', marginRight: '20px', paddingTop: '5px' }}>
+                                            <img src={Medal1988} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
+                                            <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
                                                 x1
                                             </div>
                                         </Stack>

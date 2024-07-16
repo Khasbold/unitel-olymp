@@ -8,7 +8,14 @@ import SVGButton from '../../assets/button.svg';
 function Header() {
     const isDesktop = useResponsive('up', 'lg');
     const targetRef = useRef(null);
-
+    const style = {
+        // position: "relative",
+        width: "100%",
+        height: "80px",
+        backgroundColor: "white",
+        textAlign: "center",
+        maskImage: "radial-gradient(60px at 50% 0, transparent 100%, white)",
+    };
     const smoothScrollTo = (endPos, duration) => {
         const startPos = window.pageYOffset;
         const distance = endPos - startPos;
@@ -75,13 +82,24 @@ function Header() {
                 <Box sx={{ width: '100%' }} ref={targetRef}>
                     {/* <Grid xs={12} md={12} lg={12}> */}
                     <div style={{ textAlign: 'center' }}>
-                        <div className='icon' onClick={handleScroll}>
+                        {/* <div className='icon' onClick={handleScroll}>
                             <img src={SVGButton} alt="My Icon" width={70} height={70} />
                         </div>
                         <Card sx={{ height: '100px', alignItems: 'flex-start', borderTopLeftRadius: '80px', borderTopRightRadius: '80px', display: 'flex', justifyContent: 'center', background: '#F6F6F6' }}>
                             <div className='space' >
                             </div>
-                        </Card>
+                        </Card> */}
+                        <div style={{ textAlign: "center" }}>
+                            <img
+                                style={{ marginBottom: "-40px" }}
+                                src={SVGButton}
+                                width={70}
+                                height={70}
+                            />
+                            <div style={style}></div>
+                        </div>
+
+
                         <div style={{ background: '#F6F6F6', alignItems: 'flex-start', textAlign: 'center' }}>
                             <Grid container>
                                 <Grid xs={1} md={1} lg={1} >
