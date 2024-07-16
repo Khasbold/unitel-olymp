@@ -3,7 +3,6 @@ import './Card.css';
 import { Stack, Grid, Card } from '@mui/material';
 import styled from 'styled-components';
 import useResponsive from '../useResponsive';
-import MedalPlaceholder from '../../assets/MedalPlaceholder.svg';
 import Medal1968 from '../../assets/Medal-1968.svg';
 import Medal1980 from '../../assets/Medal-1980.svg';
 import Medal1988 from '../../assets/Medal-1988.svg';
