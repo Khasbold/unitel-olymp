@@ -1,16 +1,23 @@
 .hero {
-    width: '100%';
-    min-height: 105vh;
+    height: 1000px;
     /* background: grey; */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url('../../assets/background.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
+    color: #000000;
+}
+.hero-mobile {
+    height: 1000px;
+    /* background: grey; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url('../../assets/bg-mobile.jpg');
+    background-size: cover;
+    background-position: center left;
     color: #000000;
 }
 .space {
     position: relative;
-    width: 80px;
-    height: 40px;
+    width: 105px;
+    height: 50px;
     background: grey;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -22,7 +29,7 @@
     position: absolute;
     top: 0;
     left: -43px;
-    width: 50px;
+    width: 48px;
     height: 40px;
     background: transparent;
     border-top-right-radius: 30px;
@@ -33,7 +40,7 @@
     position: absolute;
     top: 0;
     right: -43px;
-    width: 50px;
+    width: 48px;
     height: 40px;
     background: transparent;
     border-top-left-radius: 30px;
