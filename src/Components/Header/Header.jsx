@@ -1,12 +1,48 @@
 import './Header.css';
+import React, { useRef } from 'react';
 import logo from '../../assets/logo.png';
 import { Grid, Box, Card, Icon } from '@mui/material';
 import useResponsive from '../useResponsive';
 import CardHero from '../Card/Card';
-
 import SVGButton from '../../assets/button.svg';
 function Header() {
     const isDesktop = useResponsive('up', 'lg');
+    const targetRef = useRef(null);
+
+    const smoothScrollTo = (endPos, duration) => {
+        const startPos = window.pageYOffset;
+        const distance = endPos - startPos;
+        let startTime = null;
+
+        const animateScroll = (currentTime) => {
+            if (startTime === null) {
+                startTime = currentTime;
+            }
+
+            const elapsedTime = currentTime - startTime;
+            const scrollPosition = easeInOut(elapsedTime, startPos, distance, duration);
+            window.scrollTo(0, scrollPosition);
+
+            if (elapsedTime < duration) {
+                requestAnimationFrame(animateScroll);
+            }
+        };
+
+        const easeInOut = (t, b, c, d) => {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        };
+
+        requestAnimationFrame(animateScroll);
+    };
+
+    const handleScroll = () => {
+        if (targetRef.current) {
+            smoothScrollTo(targetRef.current.offsetTop, 1500); // Adjust duration as needed
+        }
+    };
     return (
         <>
             <div className={!isDesktop ? 'hero-mobile' : 'hero'}>
@@ -36,11 +72,10 @@ function Header() {
                 <Grid xs={12} md={12} lg={12}>
                     <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
                 </Grid>
-
-                <Box sx={{ width: '100%' }}>
+                <Box sx={{ width: '100%' }} ref={targetRef}>
                     {/* <Grid xs={12} md={12} lg={12}> */}
                     <div style={{ textAlign: 'center' }}>
-                        <div className='icon'>
+                        <div className='icon' onClick={handleScroll}>
                             <img src={SVGButton} alt="My Icon" width={70} height={70} />
                         </div>
                         <Card sx={{ height: '100px', alignItems: 'flex-start', borderTopLeftRadius: '80px', borderTopRightRadius: '80px', display: 'flex', justifyContent: 'center', background: '#F6F6F6' }}>
@@ -49,12 +84,12 @@ function Header() {
                         </Card>
                         <div style={{ background: '#F6F6F6', alignItems: 'flex-start', textAlign: 'center' }}>
                             <Grid container>
-                                <Grid xs={1} md={1} lg={2} >
+                                <Grid xs={1} md={1} lg={1} >
                                 </Grid>
-                                <Grid xs={10} md={10} lg={8} >
+                                <Grid xs={10} md={10} lg={10} >
                                     <CardHero />
                                 </Grid>
-                                <Grid xs={1} md={1} lg={2} >
+                                <Grid xs={1} md={1} lg={1} >
                                 </Grid>
                             </Grid>
                         </div>
