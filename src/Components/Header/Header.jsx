@@ -10,12 +10,10 @@ function Header() {
     const targetRef = useRef(null);
     const style = {
         // position: "relative",
-        width: "100%",
         height: "80px",
         borderTopLeftRadius: '80px',
         borderTopRightRadius: '80px',
         backgroundColor: "#F6F6F6",
-        textAlign: "center",
         maskImage: "radial-gradient(60px at 50% 0, transparent 100%, white)",
     };
     const smoothScrollTo = (endPos, duration) => {
@@ -76,10 +74,10 @@ function Header() {
                     )}
                 </Grid>
                 <Grid xs={12} md={12} lg={12} >
-                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
+                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
-                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
+                    <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
                 </Grid>
                 <Box sx={{ width: '100%' }} ref={targetRef}>
                     {/* <Grid xs={12} md={12} lg={12}> */}
