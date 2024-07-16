@@ -60,7 +60,7 @@ function Header() {
                         <Grid item xs={6} md={6} lg={6} >
                             <img src={logo} alt="" style={{ width: !isDesktop ? '100px' : '190px' }} />
                         </Grid>
-                        <Grid xs={6} md={6} lg={6} sx={{ textAlign: 'right' }}>
+                        <Grid xs={6} md={6} lg={6} sx={{ textAlign: 'right', paddingTop: '4px' }}>
                             <div style={{ fontSize: !isDesktop ? '10px' : '23px' }}><b>ХАМТДАА</b> ТҮРҮҮЛЖ АЛХАНА</div>
                         </Grid>
                     </Grid>
@@ -91,7 +91,7 @@ function Header() {
                             <div className='space' >
                             </div>
                         </Card> */}
-                        <div style={{ textAlign: "center", background: '', cursor: 'pointer' }} onClick={handleScroll}>
+                        <div style={{ textAlign: "center", cursor: 'pointer' }} onClick={handleScroll}>
                             <img
                                 style={{ marginBottom: "-40px" }}
                                 src={SVGButton}
