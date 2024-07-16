@@ -12,7 +12,9 @@ function Header() {
         // position: "relative",
         width: "100%",
         height: "80px",
-        backgroundColor: "white",
+        borderTopLeftRadius: '80px',
+        borderTopRightRadius: '80px',
+        backgroundColor: "#F6F6F6",
         textAlign: "center",
         maskImage: "radial-gradient(60px at 50% 0, transparent 100%, white)",
     };
@@ -74,7 +76,7 @@ function Header() {
                     )}
                 </Grid>
                 <Grid xs={12} md={12} lg={12} >
-                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
+                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
                     <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
@@ -89,7 +91,7 @@ function Header() {
                             <div className='space' >
                             </div>
                         </Card> */}
-                        <div style={{ textAlign: "center" }}>
+                        <div style={{ textAlign: "center", background: '', cursor: 'pointer' }} onClick={handleScroll}>
                             <img
                                 style={{ marginBottom: "-40px" }}
                                 src={SVGButton}

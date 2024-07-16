@@ -26,7 +26,7 @@ const Tab = styled.li`
   wdith: 100%;
 `;
 const LiveNow = custStyled.span`
-  padding: 25px;
+  padding: 15px;
   background: transparent linear-gradient(180deg, #58cd58 0%, #38d338 100%) 0%
     0% no-repeat padding-box;
   border-radius: 20px;
