@@ -13,15 +13,16 @@
     color: #000000;
 }
 .footer-image {
+    height: 1180px;
     background: url('../../assets/footer-phone.png');
     background-repeat: no-repeat;
-    background-position: center left 800px;
+    background-position: bottom left 800px;
 }
 .footer-image-mobile {
     background: url('../../assets/footer-phone.png');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position: center left 45px;
 }
 .space {
     position: relative;

@@ -53,7 +53,7 @@ function Header() {
     return (
         <>
             <div className={!isDesktop ? 'hero-mobile' : 'hero'}>
-                <Box style={{ position: 'fixed', width: '100%', zIndex: '3', paddingBottom: '0px !important' }}>
+                <Box style={{  width: '100%', zIndex: '3', paddingBottom: '0px !important' }}>
                     <Grid container padding={!isDesktop ? 4 : 7} sx={{paddingBottom: '0px !important'}}>
                         <Grid item xs={6} md={6} lg={6} >
                             <img src={logo} alt="" style={{ width: !isDesktop ? '100px' : '190px' }} />
@@ -64,7 +64,7 @@ function Header() {
                     </Grid>
                 </Box>
                 <Grid xs={12} md={12} lg={12}>
-                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '32px', paddingTop: '140px' }}>Юнител групп ололт амжилтыг дэмждэг</div>
+                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '32px' }}>Юнител групп ололт амжилтыг дэмждэг</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
                     {isDesktop ? (
@@ -82,14 +82,14 @@ function Header() {
                 <Box sx={{ width: '100%' }} ref={targetRef}>
                     {/* <Grid xs={12} md={12} lg={12}> */}
                     <div style={{ textAlign: 'center' }}>
-                        {/* <div className='icon' onClick={handleScroll}>
+                        <div className='icon' onClick={handleScroll}>
                             <img src={SVGButton} alt="My Icon" width={70} height={70} />
                         </div>
                         <Card sx={{ height: '100px', alignItems: 'flex-start', borderTopLeftRadius: '80px', borderTopRightRadius: '80px', display: 'flex', justifyContent: 'center', background: '#F6F6F6' }}>
                             <div className='space' >
                             </div>
-                        </Card> */}
-                        <div style={{ textAlign: "center", cursor: 'pointer' }} onClick={handleScroll}>
+                        </Card>
+                        {/* <div style={{ textAlign: "center", cursor: 'pointer' }} onClick={handleScroll}>
                             <img
                                 style={{ marginBottom: "-40px" }}
                                 src={SVGButton}
@@ -97,7 +97,7 @@ function Header() {
                                 height={70}
                             />
                             <div style={style}></div>
-                        </div>
+                        </div> */}
 
 
                         <div style={{ background: '#F6F6F6', alignItems: 'flex-start', textAlign: 'center' }}>

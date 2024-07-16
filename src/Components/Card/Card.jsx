@@ -314,16 +314,16 @@ const Tabs = () => {
             </Wrap >
             <div className={!isDesktop ? 'footer-image-mobile' : 'footer-image'}>
                 <Grid container>
-                    <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
+                    <Grid xs={12} md={12} lg={5} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: !isDesktop ? '80px' : '200px', paddingLeft: !isDesktop ? '' : '80px' }}>
                         Монголын тамирчид Парисын Олимпоос медаль авах бүрд Unitel апп-аас үйлчилгээ авсан хэрэглэгчдэдээ зориулаад <br /><b>2024MB</b> датаг үржүүлэн бэлэглэх болно.
                     </Grid>
-                    <Grid xs={12} md={12} lg={5}>
+                    <Grid xs={12} md={12} lg={7}>
                     </Grid>
                     <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
                         <Stack container>
                             {!isDesktop ? (
                                 <Stack direction={'column'} sx={{ justifyContent: 'center', paddingLeft: '20px' }} spacing={3} >
-                                    <div style={{ fontSize: '35px', paddingTop: '10px', float: 'left', color: '#61c761' }}>
+                                    <div style={{ fontSize: '35px', paddingTop: '10px', float: 'left', color: 'black' }}>
                                         <b>2024MB</b>
                                     </div>
                                     <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
@@ -353,7 +353,7 @@ const Tabs = () => {
                                 </Stack>
                             ) : (
                                 <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                    <div style={{ fontSize: '55px', paddingLeft: '160px', paddingTop: '10px' }}>
+                                    <div style={{ fontSize: '55px', paddingTop: '10px' }}>
                                         <b>2024MB</b>
                                     </div>
                                     <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
@@ -386,10 +386,10 @@ const Tabs = () => {
                     </Grid>
                     <Grid xs={12} md={12} lg={5}>
                     </Grid>
-                    <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '10px' : '80px', color: !isDesktop ? 'white' : '' }}>
+                    <Grid xs={12} md={12} lg={5} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '10px' : '80px', color: !isDesktop ? '' : '' }}>
                         Эрхэм хэрэглэгч та бүх үйлчилгээг Unitel апп-аас аваад Олимпын урамшуулалдаа хамрагдаарай.
                     </Grid>
-                    <Grid xs={12} md={12} lg={5}>
+                    <Grid xs={12} md={12} lg={7}>
                     </Grid>
                     <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '0px' : '80px', paddingBottom: !isDesktop ? '100px' : '150px' }}>
                         <LiveNow onClick={goDownload}>Unitel App татах</LiveNow>
