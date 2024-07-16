@@ -53,8 +53,8 @@ function Header() {
     return (
         <>
             <div className={!isDesktop ? 'hero-mobile' : 'hero'}>
-                <Box style={{ position: 'fixed', width: '100%', zIndex: '99999' }}>
-                    <Grid container padding={!isDesktop ? 4 : 7}>
+                <Box style={{ position: 'fixed', width: '100%', zIndex: '3', paddingBottom: '0px !important' }}>
+                    <Grid container padding={!isDesktop ? 4 : 7} sx={{paddingBottom: '0px !important'}}>
                         <Grid item xs={6} md={6} lg={6} >
                             <img src={logo} alt="" style={{ width: !isDesktop ? '100px' : '190px' }} />
                         </Grid>
