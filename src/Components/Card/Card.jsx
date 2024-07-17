@@ -241,9 +241,9 @@ const Tabs = () => {
                                     <img style={{ paddingLeft: '5px', paddingTop: '15px', paddingBottom: '15px' }} src={buhIcon} alt="My Icon" width={60} height={60} />
                                     <div style={{ fontSize: !isDesktop ? '15px' : '24px', paddingTop: '30px', paddingLeft: '10px' }}><b>Чөлөөт бөх</b></div>
                                 </Stack>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px', paddingTop: '20px' }}><div>Мөнхөд дурсагдах амжилтыг</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Мөрөөдлөөрөө жигүүрлэн дэлхийд анх таниулав</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Медалийн эзэн: Ж.Мөнхбат</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px', paddingTop: '20px' }}><div>Мөнхөд дурсагдах амжилтыг</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Мөрөөдлөөрөө жигүүрлэн дэлхийд анх таниулав</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Медалийн эзэн: Ж.Мөнхбат</div></div>
                             </Grid>
                         </Grid>
                     </TabContent>
@@ -259,9 +259,9 @@ const Tabs = () => {
                                     <img style={{ paddingLeft: '5px', paddingTop: '15px', paddingBottom: '15px' }} src={buhIcon} alt="My Icon" width={60} height={60} />
                                     <div style={{ fontSize: !isDesktop ? '15px' : '24px', paddingTop: '30px', paddingLeft: '10px' }}><b>Жүдо</b></div>
                                 </Stack>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px', paddingTop: '20px' }}><div>Уран мэхийг уралдуулж</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Урагш тэмүүлэх амжилтыг түгээв</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Медалийн эзэн: Ц.Дамдин</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px', paddingTop: '20px' }}><div>Уран мэхийг уралдуулж</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Урагш тэмүүлэх амжилтыг түгээв</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Медалийн эзэн: Ц.Дамдин</div></div>
                             </Grid>
                         </Grid>
                     </TabContent>
@@ -277,9 +277,9 @@ const Tabs = () => {
                                     <img style={{ paddingLeft: '5px', paddingTop: '15px', paddingBottom: '15px' }} src={boxingIcon} alt="My Icon" width={60} height={60} />
                                     <div style={{ fontSize: !isDesktop ? '15px' : '24px', paddingTop: '30px', paddingLeft: '10px' }}><b>Бокс</b></div>
                                 </Stack>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px', paddingTop: '20px' }}><div>Тэсвэр тэвчээрийг шандас болгож</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Тэнүүн их амжилтыг эх орондоо авчрав</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Медалийн эзэн: Н.Энхбат</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px', paddingTop: '20px' }}><div>Тэсвэр тэвчээрийг шандас болгож</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Тэнүүн их амжилтыг эх орондоо авчрав</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Медалийн эзэн: Н.Энхбат</div></div>
                             </Grid>
                         </Grid>
                     </TabContent>
@@ -295,9 +295,9 @@ const Tabs = () => {
                                     <img style={{ paddingLeft: '5px', paddingTop: '15px', paddingBottom: '15px' }} src={shootingIcon} alt="My Icon" width={60} height={60} />
                                     <div style={{ fontSize: !isDesktop ? '15px' : '24px', paddingTop: '30px', paddingLeft: '10px' }}><b>Буудлагын төрөл</b></div>
                                 </Stack>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px', paddingTop: '20px' }}><div>Салхи сөрөн нисгэсэн сум</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Саруул түмний минь итгэл найдварыг бадраав</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Медалийн эзэн: Д.Мөнхбаяр</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px', paddingTop: '20px' }}><div>Салхи сөрөн нисгэсэн сум</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Саруул түмний минь итгэл найдварыг бадраав</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Медалийн эзэн: Д.Мөнхбаяр</div></div>
                             </Grid>
                         </Grid>
                     </TabContent>
@@ -313,9 +313,9 @@ const Tabs = () => {
                                     <img style={{ paddingLeft: '5px', paddingTop: '15px', paddingBottom: '15px' }} src={bowIcon} alt="My Icon" width={60} height={60} />
                                     <div style={{ fontSize: !isDesktop ? '15px' : '24px', paddingTop: !isDesktop ? '10px' : '30px', paddingLeft: '10px' }}><b>Байт харваагийн төрөл</b></div>
                                 </Stack>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px', paddingTop: '20px' }}><div>Амжилтын гараа хэцүү байсан ч</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Түүхэнд үлдэх гавьяат үйлийг бүтээв</div></div>
-                                <div style={{ fontSize: !isDesktop ? '16px' : '18px' }}><div>Медалийн эзэн: Д.Баатаржав</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px', paddingTop: '20px' }}><div>Амжилтын гараа хэцүү байсан ч</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Түүхэнд үлдэх гавьяат үйлийг бүтээв</div></div>
+                                <div style={{ fontSize: !isDesktop ? '15px' : '18px' }}><div>Медалийн эзэн: Д.Баатаржав</div></div>
                             </Grid>
                         </Grid>
                     </TabContent>
@@ -324,12 +324,12 @@ const Tabs = () => {
             </Wrap >
             <div className={!isDesktop ? 'footer-image-mobile' : 'footer-image'}>
                 <Grid container>
-                    <Grid xs={12} md={12} lg={5} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: !isDesktop ? '80px' : '200px', paddingLeft: !isDesktop ? '' : '80px' }}>
+                    <Grid xs={12} md={12} lg={5} sx={{ fontSize: '16px', textAlign: 'left', paddingTop: !isDesktop ? '80px' : '200px', paddingLeft: !isDesktop ? '' : '80px' }}>
                         Монголын тамирчид Парисын Олимпоос медаль авах бүрд Unitel апп-аас үйлчилгээ авсан хэрэглэгчдэдээ зориулаад <br /><b>2024MB</b> датаг үржүүлэн бэлэглэх болно.
                     </Grid>
                     <Grid xs={12} md={12} lg={7}>
                     </Grid>
-                    <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
+                    <Grid xs={12} md={12} lg={7} sx={{ fontSize: '16px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
                         <Stack container>
                             {!isDesktop ? (
                                 <Stack direction={'column'} sx={{ justifyContent: 'center', paddingLeft: '20px' }} spacing={3} >
@@ -396,7 +396,7 @@ const Tabs = () => {
                     </Grid>
                     <Grid xs={12} md={12} lg={5}>
                     </Grid>
-                    <Grid xs={12} md={12} lg={5} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '10px' : '80px', color: !isDesktop ? '' : '' }}>
+                    <Grid xs={12} md={12} lg={5} sx={{ fontSize: '15px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '10px' : '80px', color: !isDesktop ? '' : '' }}>
                         Эрхэм хэрэглэгч та бүх үйлчилгээг Unitel апп-аас аваад Олимпын урамшуулалдаа хамрагдаарай.
                     </Grid>
                     <Grid xs={12} md={12} lg={7}>

@@ -74,7 +74,7 @@ function Header() {
                     )}
                 </Grid>
                 <Grid xs={12} md={12} lg={12} >
-                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
+                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт {!isDesktop && (<br/>)} 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
                     <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
