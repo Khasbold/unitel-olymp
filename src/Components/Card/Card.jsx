@@ -8,6 +8,9 @@ import Medal1980 from '../../assets/Medal-1980.svg';
 import Medal1988 from '../../assets/Medal-1988.svg';
 import Medal1992 from '../../assets/Medal-1992.svg';
 import Medal2008 from '../../assets/Medal-2008.svg';
+import Gold from '../../assets/Medal-Gold.svg';
+import Silver from '../../assets/Medal-Silver.svg';
+import Bronze from '../../assets/Medal-Bronze.svg';
 import buhIcon from '../../assets/wrestling-icon.svg';
 import shootingIcon from '../../assets/shooting-icon.svg';
 import boxingIcon from '../../assets/boxing-icon.svg';
@@ -335,7 +338,7 @@ const Tabs = () => {
                                     </div>
                                     <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal2008} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
+                                            <img src={Gold} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
                                             <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
                                                 x3
                                             </div>
@@ -343,7 +346,7 @@ const Tabs = () => {
                                     </div>
                                     <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal1980} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
+                                            <img src={Silver} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
                                             <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
                                                 x2
                                             </div>
@@ -351,7 +354,7 @@ const Tabs = () => {
                                     </div>
                                     <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal1988} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
+                                            <img src={Bronze} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
                                             <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
                                                 x1
                                             </div>
@@ -365,7 +368,7 @@ const Tabs = () => {
                                     </div>
                                     <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal2008} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
+                                            <img src={Gold} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
                                             <div style={{ fontSize: '60px', fontWeight: '600', marginLeft: '0px', marginRight: '20px', paddingTop: '5px' }}>
                                                 x3
                                             </div>
@@ -373,7 +376,7 @@ const Tabs = () => {
                                     </div>
                                     <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal1980} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
+                                            <img src={Silver} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
                                             <div style={{ fontSize: '60px', fontWeight: '600', marginLeft: '0px', marginRight: '20px', paddingTop: '5px' }}>
                                                 x2
                                             </div>
@@ -381,7 +384,7 @@ const Tabs = () => {
                                     </div>
                                     <div id="content" style={{ borderRadius: '30px', height: '100px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Medal1988} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
+                                            <img src={Bronze} alt="My Icon" width={80} height={80} style={{ padding: '10px' }} />
                                             <div style={{ fontSize: '60px', fontWeight: '600', marginLeft: '0px', marginRight: '20px', paddingTop: '5px' }}>
                                                 x1
                                             </div>
