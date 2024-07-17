@@ -28,7 +28,7 @@
     position: relative;
     width: 105px;
     height: 50px;
-    background: grey;
+    background: black;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     display: inline-grid;
@@ -43,7 +43,7 @@
     height: 40px;
     background: transparent;
     border-top-right-radius: 30px;
-    box-shadow: 0px -20px 0 0px grey;
+    box-shadow: 0px -20px 0 0px black;
 }
 .space::after {
     content: '';
@@ -54,7 +54,7 @@
     height: 40px;
     background: transparent;
     border-top-left-radius: 30px;
-    box-shadow: 0px -20px 0 0px grey;
+    box-shadow: 0px -20px 0 0px black;
 }
 .icon {
     position: relative;
