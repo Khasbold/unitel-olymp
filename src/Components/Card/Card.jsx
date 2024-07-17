@@ -100,7 +100,6 @@ const Wrap = styled.div`
 
 const Tabs = () => {
     const [activeTab, setActiveTab] = useState('#/one');
-
     const handleClick = (event, tab) => {
         if (activeTab === '#/one') localStorage.setItem('currentMedal', 'mexico-1968.glb');
         if (activeTab === '#/two') localStorage.setItem('currentMedal', 'moscow-1980.glb');
@@ -230,7 +229,7 @@ const Tabs = () => {
                     <TabContent active={activeTab === '#/one'} id="one" sx={{ height: !isDesktop ? '500px' : '700px' }} >
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
-                                {activeTab === '#/one' && (<Medal tab={activeTab} prevModelPath="mexico-1968.glb" path="mexico-1968.glb" />)}
+                                {activeTab === '#/one' && (<Medal tab={activeTab} path="mexico-1968.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Монголын анхны медаль</b></div>
@@ -248,7 +247,7 @@ const Tabs = () => {
                     <TabContent active={activeTab === '#/two'} id="two" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
-                                {activeTab === '#/two' && (<Medal tab={activeTab} prevModelPath="mexico-1968.glb" path="moscow-1980.glb" />)}
+                                {activeTab === '#/two' && (<Medal tab={activeTab} path="moscow-1980.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Жүдогийн анхны медаль</b></div>
@@ -266,7 +265,7 @@ const Tabs = () => {
                     <TabContent active={activeTab === '#/three'} id="three" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
-                                {activeTab === '#/three' && (<Medal tab={activeTab} prevModelPath="moscow-1980.glb" path="seoul-1988.glb" />)}
+                                {activeTab === '#/three' && (<Medal tab={activeTab} path="seoul-1988.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Боксын анхны медаль</b></div>
@@ -284,7 +283,7 @@ const Tabs = () => {
                     <TabContent active={activeTab === '#/four'} id="four" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
-                                {activeTab === '#/four' && (<Medal tab={activeTab} prevModelPath="seoul-1988.glb" path="barcelona-1992.glb" />)}
+                                {activeTab === '#/four' && (<Medal tab={activeTab} path="barcelona-1992.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Буудлагын анхны медаль</b></div>
@@ -302,7 +301,7 @@ const Tabs = () => {
                     <TabContent active={activeTab === '#/five'} id="five" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
-                                {activeTab === '#/five' && (<Medal tab={activeTab} prevModelPath="barcelona-1992.glb" path="beijing-2008.glb" />)}
+                                {activeTab === '#/five' && (<Medal tab={activeTab} path="beijing-2008.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Байт харваагийн анхны медаль</b></div>

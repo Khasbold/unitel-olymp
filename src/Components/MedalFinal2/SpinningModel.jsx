@@ -3,15 +3,14 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 
-const SpinningModel = ({ prevModelPath, modelPath, currentTab }) => {
+const SpinningModel = ({ modelPath, currentTab }) => {
   const modelRef = useRef();
-  const [tab, setTab] = useState('#/one');
-  const [path, setPath] = useState('mexico-1968.glb');
   const [positionZ, setPositionZ] = useState(-10); // Start position behind the camera
   const [rotationY, setRotationY] = useState(0); // Start rotation
   const [stage, setStage] = useState(0); // Track the stages of the animation
-  const [scene, setScene] = useState(useGLTF(localStorage.getItem('currentMedal') ? localStorage.getItem('currentMedal') : '').scene);
-
+  const [scene, setScene] = useState(useGLTF(localStorage.getItem('currentMedal') ? localStorage.getItem('currentMedal') : 'mexico-1968.glb').scene);
+  console.log('SCENE: ', scene)
+  // localStorage.getItem('currentMedal') ? localStorage.getItem('currentMedal') : ''
   // let { scene } = useGLTF(modelPath);
   // Variable SCENE is Loaded 3D model
   // Animate the model
@@ -51,21 +50,16 @@ const SpinningModel = ({ prevModelPath, modelPath, currentTab }) => {
         }
       } else {
         setPositionZ(0);
-        setTab(currentTab);
-        setPath(localStorage.getItem('currentMedal') ? localStorage.getItem('currentMedal') : '');
         switch (stage) {
           case 0: // Rotate to +90 degrees
             if (rotationY < Math.PI / 2) {
               setRotationY(rotationY + Math.PI / 180); // Rotate right
             } else {
-              // setScene(useGLTF(modelPath));
-              // setRotationY(4.7);
-              
               setStage(1);
             }
             break;
           case 1: // Rotate to +180 degrees
-            setRotationY(4.73);
+            setRotationY(5);
             setStage(2);
             break;
           case 2: // Rotate back to +90 degrees
@@ -86,7 +80,7 @@ const SpinningModel = ({ prevModelPath, modelPath, currentTab }) => {
       modelRef.current.rotation.y = rotationY;
     }
   });
-  return scene ? <primitive ref={modelRef} object={scene} /> : null;
+  return scene ? <primitive ref={modelRef} object={scene} /> : <></>;
 };
 
 export default SpinningModel;

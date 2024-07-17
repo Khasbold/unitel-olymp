@@ -4,7 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 import SpinningModel from './SpinningModel';
 import useResponsive from '../useResponsive';
 
-const Medal3D = ({ tab, path, prevModelPath }) => {
+const Medal3D = ({ tab, path }) => {
   const [rotationY, setRotationY] = useState(0);
   const isDesktop = useResponsive('up', 'lg');
   const [currentTab, setCurrentTab] = useState(0);
@@ -33,12 +33,10 @@ const Medal3D = ({ tab, path, prevModelPath }) => {
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 25, 45]} />
       <SpinningModel
-        prevModelPath={prevModelPath}
         modelPath={path}
         currentTab={tab}
         rotateTo180={rotateTo180}
       />
-      {/* <OrbitControls enableZoom={false} /> */}
       <OrbitControls enableZoom={false} maxAzimuthAngle={Math.PI / 4} minAzimuthAngle={-Math.PI / 4} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2} />
     </Canvas>
   );

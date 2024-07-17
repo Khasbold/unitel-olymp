@@ -98,8 +98,6 @@ function Header() {
                             />
                             <div style={style}></div>
                         </div> */}
-
-
                         <div style={{ background: '#F6F6F6', alignItems: 'flex-start', textAlign: 'center' }}>
                             <Grid container>
                                 <Grid xs={1} md={1} lg={1} >
