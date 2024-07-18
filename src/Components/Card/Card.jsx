@@ -15,6 +15,8 @@ import buhIcon from '../../assets/wrestling-icon.svg';
 import shootingIcon from '../../assets/shooting-icon.svg';
 import boxingIcon from '../../assets/boxing-icon.svg';
 import bowIcon from '../../assets/bow-arrow-icon.svg';
+import back from '../../assets/back.png';
+import front from '../../assets/front.png';
 import Medal from '../MedalFinal2/MedalFinal2';
 import custStyled from "styled-components";
 import { isDesktop } from 'react-device-detect';
@@ -117,7 +119,10 @@ const Tabs = () => {
         window.open('https://link.unitel.mn/xxqa4', '_blank').focus();
     };
     const isDesktop = useResponsive('up', 'lg');
-
+    const [isFlipped, setIsFlipped] = useState(false);
+    const handleClickCoin = () => {
+        setIsFlipped(!isFlipped);
+    };
     return (
         <>
             <Wrap >
@@ -305,6 +310,12 @@ const Tabs = () => {
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/five' && (<Medal tab={activeTab} path="beijing-2008.glb" />)}
+                                <div onClick={handleClickCoin}>
+                                    <div className={`coin ${isFlipped ? 'flipped' : ''}`}>
+                                        <div class="front"><img src={front} alt="My Icon" width={500} height={500} /></div>
+                                        <div class="back"><img src={back} alt="My Icon" width={500} height={500} /></div>
+                                    </div>
+                                </div>
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Байт харваагийн анхны медаль</b></div>
@@ -336,26 +347,26 @@ const Tabs = () => {
                                     <div style={{ fontSize: '35px', paddingTop: '10px', float: 'left', color: 'black' }}>
                                         <b>2024MB</b>
                                     </div>
-                                    <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
+                                    <div id="content" style={{ width: '35%', borderRadius: '30px', height: '60px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Gold} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
-                                            <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
+                                            <img src={Gold} alt="My Icon" width={50} height={50} style={{ paddingTop: '5px' }} />
+                                            <div style={{ fontSize: '30px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '8px' }}>
                                                 x3
                                             </div>
                                         </Stack>
                                     </div>
-                                    <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
+                                    <div id="content" style={{ width: '35%', borderRadius: '30px', height: '60px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Silver} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
-                                            <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
+                                            <img src={Silver} alt="My Icon" width={50} height={50} style={{ paddingTop: '5px' }} />
+                                            <div style={{ fontSize: '30px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '8px' }}>
                                                 x2
                                             </div>
                                         </Stack>
                                     </div>
-                                    <div id="content" style={{ width: '45%', borderRadius: '30px', height: '80px' }}>
+                                    <div id="content" style={{ width: '35%', borderRadius: '30px', height: '60px' }}>
                                         <Stack direction={'row'} sx={{ justifyContent: 'center' }} spacing={3}>
-                                            <img src={Bronze} alt="My Icon" width={60} height={60} style={{ padding: '10px' }} />
-                                            <div style={{ fontSize: '40px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '10px' }}>
+                                            <img src={Bronze} alt="My Icon" width={50} height={50} style={{ paddingTop: '5px' }} />
+                                            <div style={{ fontSize: '30px', fontWeight: '600', marginLeft: '0px', marginRight: '10px', paddingTop: '8px' }}>
                                                 x1
                                             </div>
                                         </Stack>

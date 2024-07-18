@@ -21,8 +21,8 @@
 .footer-image-mobile {
     background: url('../../assets/footer-phone.png');
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center left 45px;
+    background-size: 360px;
+    background-position: center left 160px;
 }
 .space {
     position: relative;
