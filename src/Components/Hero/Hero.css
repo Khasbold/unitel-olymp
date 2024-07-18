@@ -13,10 +13,10 @@
     color: #000000;
 }
 .footer-image {
-    height: 1180px;
     background: url('../../assets/footer-phone.png');
     background-repeat: no-repeat;
-    background-position: bottom left 800px;
+    background-size: contain;
+    background-position: top 67px left 890px;
 }
 .footer-image-mobile {
     background: url('../../assets/footer-phone.png');

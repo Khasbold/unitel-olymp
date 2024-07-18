@@ -127,9 +127,6 @@ const Tabs = () => {
     };
     const isDesktop = useResponsive('up', 'lg');
     const [isFlipped, setIsFlipped] = useState(false);
-    const handleClickCoin = () => {
-        setIsFlipped(!isFlipped);
-    };
     return (
         <>
             <Wrap >
@@ -243,7 +240,7 @@ const Tabs = () => {
                 <Content id="content" className={!isDesktop && activeTab === '#/one' ? 'firstBorder' : !isDesktop && activeTab === '#/five' ? 'lastBorder' : 'allBorder'}>
                     <TabContent active={activeTab === '#/one'} id="one" sx={{ height: !isDesktop ? '500px' : '700px' }} >
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '100px' }} >
                                 {activeTab === '#/one' && (<Medal tab={activeTab} path="1968.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -261,7 +258,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/two'} id="two" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '100px' }} >
                                 {activeTab === '#/two' && (<Medal tab={activeTab} path="1980.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -279,7 +276,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/three'} id="three" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '100px' }} >
                                 {activeTab === '#/three' && (<Medal tab={activeTab} path="1988.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -297,7 +294,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/four'} id="four" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '100px' }} >
                                 {activeTab === '#/four' && (<Medal tab={activeTab} path="1992.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -315,7 +312,7 @@ const Tabs = () => {
                     </TabContent>
                     <TabContent active={activeTab === '#/five'} id="five" sx={{ height: !isDesktop ? '500px' : '700px' }}>
                         <Grid container padding={2}>
-                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
+                            <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '100px' }} >
                                 {activeTab === '#/five' && (<Medal tab={activeTab} path="2008.glb" />)}
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
@@ -341,7 +338,7 @@ const Tabs = () => {
                     </Grid>
                     <Grid xs={12} md={12} lg={7}>
                     </Grid>
-                    <Grid xs={12} md={12} lg={7} sx={{ fontSize: '16px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
+                    <Grid xs={12} md={10} lg={7} sx={{ fontSize: '16px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '' : '80px' }}>
                         <Stack container>
                             {!isDesktop ? (
                                 <Stack direction={'column'} sx={{ justifyContent: 'center', paddingLeft: '20px' }} spacing={3} >
@@ -406,7 +403,7 @@ const Tabs = () => {
                             )}
                         </Stack>
                     </Grid>
-                    <Grid xs={12} md={12} lg={5}>
+                    <Grid xs={12} md={2} lg={5}>
                     </Grid>
                     <Grid xs={12} md={12} lg={5} sx={{ fontSize: '15px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '10px' : '80px', color: !isDesktop ? '' : '' }}>
                         Эрхэм хэрэглэгч та бүх үйлчилгээг Unitel апп-аас аваад Олимпын урамшуулалдаа хамрагдаарай.
@@ -414,7 +411,7 @@ const Tabs = () => {
                     <Grid xs={12} md={12} lg={7}>
                     </Grid>
                     <Grid xs={12} md={12} lg={7} sx={{ fontWeight: !isDesktop ? 400 : null, fontSize: !isDesktop ? '15px' : '20px', textAlign: !isDesktop ? 'center' : 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '0px' : '80px', paddingBottom: !isDesktop ? '100px' : '150px' }}>
-                        <Button variant="contained" sx={{
+                        <Button variant="contained" onClick={goDownload} sx={{
                             backgroundColor: 'primary.main', // initial background color
                             '&:hover': {
                                 backgroundColor: '#24a93f', // hover background color
