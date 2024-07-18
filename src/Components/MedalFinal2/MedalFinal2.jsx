@@ -37,8 +37,8 @@ const Medal3D = ({ tab, path }) => {
         currentTab={tab}
         rotateTo180={rotateTo180}
       />
-      <OrbitControls enableZoom={false} />
-      {/* maxAzimuthAngle={Math.PI / 4} minAzimuthAngle={-Math.PI / 4} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2} */}
+      <OrbitControls enableZoom={false} maxAzimuthAngle={Math.PI / 4} minAzimuthAngle={-Math.PI / 4} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2} />
+     
     </Canvas>
   );
 };

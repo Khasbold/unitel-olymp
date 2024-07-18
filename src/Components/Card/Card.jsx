@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Card.css';
-import { Stack, Grid, Card } from '@mui/material';
+import { Stack, Grid, Card, Icon, Button } from '@mui/material';
 import styled from 'styled-components';
 import useResponsive from '../useResponsive';
 import Medal1968 from '../../assets/Medal-1968.svg';
@@ -19,6 +19,8 @@ import back from '../../assets/back.png';
 import front from '../../assets/front.png';
 import Medal from '../MedalFinal2/MedalFinal2';
 import custStyled from "styled-components";
+import SvgIcon from '@mui/material/SvgIcon';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { isDesktop } from 'react-device-detect';
 const TabsContainer = styled.ul`
   list-style: none;
@@ -26,24 +28,29 @@ const TabsContainer = styled.ul`
   padding: 0;
   margin: 0;
 `;
-
+function HomeIcon(props) {
+    return (
+        <SvgIcon {...props}>
+            <FileDownloadIcon />
+        </SvgIcon>
+    );
+}
 const Tab = styled.li`
   wdith: 100%;
 `;
 const LiveNow = custStyled.span`
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 13px;
+  padding-left: ${!isDesktop ? '15px' : '30px'};
+  padding-right: ${!isDesktop ? '15px' : '30px'};
   background: transparent linear-gradient(180deg, #58cd58 0%, #38d338 100%) 0%
     0% no-repeat padding-box;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: ${!isDesktop ? '15px' : '20px'};
+  font-weight: ${!isDesktop ? 400 : null};
   color: #fff;
   flex-grow: 0;
   z-index: 1;
   cursor: pointer;
-  font-weight: bold;
-  float: left;
   -webkit-animation: glowing 1300ms infinite;
   -moz-animation: glowing 1300ms infinite;
   -o-animation: glowing 1300ms infinite;
@@ -310,12 +317,6 @@ const Tabs = () => {
                         <Grid container padding={2}>
                             <Grid item xs={12} md={12} lg={6} sx={{ paddingLeft: !isDesktop ? '' : '140px' }} >
                                 {activeTab === '#/five' && (<Medal tab={activeTab} path="beijing-2008.glb" />)}
-                                <div onClick={handleClickCoin}>
-                                    <div className={`coin ${isFlipped ? 'flipped' : ''}`}>
-                                        <div class="front"><img src={front} alt="My Icon" width={500} height={500} /></div>
-                                        <div class="back"><img src={back} alt="My Icon" width={500} height={500} /></div>
-                                    </div>
-                                </div>
                             </Grid>
                             <Grid xs={12} md={12} lg={5} padding={5} sx={{ textAlign: 'left', paddingTop: !isDesktop ? '20px' : '65px' }}>
                                 <div style={{ fontSize: !isDesktop ? '32px' : '60px', lineHeight: !isDesktop ? '30px' : '60px' }}><b>Байт харваагийн анхны медаль</b></div>
@@ -412,8 +413,20 @@ const Tabs = () => {
                     </Grid>
                     <Grid xs={12} md={12} lg={7}>
                     </Grid>
-                    <Grid xs={12} md={12} lg={7} sx={{ fontSize: '20px', textAlign: 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '0px' : '80px', paddingBottom: !isDesktop ? '100px' : '150px' }}>
-                        <LiveNow onClick={goDownload}>Unitel апп татах</LiveNow>
+                    <Grid xs={12} md={12} lg={7} sx={{ fontWeight: !isDesktop ? 400 : null, fontSize: !isDesktop ? '15px' : '20px', textAlign: !isDesktop ? 'center' : 'left', paddingTop: '60px', paddingLeft: !isDesktop ? '0px' : '80px', paddingBottom: !isDesktop ? '100px' : '150px' }}>
+                        <Button variant="contained" sx={{
+                            backgroundColor: 'primary.main', // initial background color
+                            '&:hover': {
+                                backgroundColor: '#24a93f', // hover background color
+                            },
+                            textTransform: 'none', fontFamily: 'Manrope, sans-serif', borderRadius: '40px', textColor: 'white', backgroundColor: '#53CE53',
+                            // paddingTop: '10px !important',
+                            padding: '10px',
+                            paddingLeft: '30px',
+                            paddingRight: '30px',
+                        }} startIcon={<FileDownloadIcon />}>
+                            Unitel апп татах
+                        </Button>
                     </Grid>
                     <Grid xs={12} md={12} lg={5}>
                     </Grid>

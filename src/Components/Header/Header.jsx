@@ -53,8 +53,8 @@ function Header() {
     return (
         <>
             <div className={!isDesktop ? 'hero-mobile' : 'hero'}>
-                <Box style={{  width: '100%', zIndex: '3', paddingBottom: '0px !important' }}>
-                    <Grid container padding={!isDesktop ? 4 : 7} sx={{paddingBottom: '0px !important'}}>
+                <Box style={{ width: '100%', zIndex: '3', paddingBottom: '0px !important' }}>
+                    <Grid container padding={!isDesktop ? 4 : 7} sx={{ paddingBottom: '0px !important' }}>
                         <Grid item xs={6} md={6} lg={6} >
                             <img src={logo} alt="" style={{ width: !isDesktop ? '100px' : '190px' }} />
                         </Grid>
@@ -64,7 +64,7 @@ function Header() {
                     </Grid>
                 </Box>
                 <Grid xs={12} md={12} lg={12}>
-                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '32px' }}>Юнител групп ололт амжилтыг дэмждэг</div>
+                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '32px', paddingTop: !isDesktop ? '50px' : '' }}>Юнител групп ололт амжилтыг дэмждэг</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
                     {isDesktop ? (
@@ -74,7 +74,7 @@ function Header() {
                     )}
                 </Grid>
                 <Grid xs={12} md={12} lg={12} >
-                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт {!isDesktop && (<br/>)} 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
+                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
                     <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
