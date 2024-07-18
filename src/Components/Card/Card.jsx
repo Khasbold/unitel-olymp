@@ -106,7 +106,7 @@ const TabContent = styled.p`
 const Wrap = styled.div`
   .group {
     display: flex;
-    width: ${!isDesktop ? '' : '900px'};
+    width: ${!isDesktop ? '100%' : '900px'};
   }
 `;
 

@@ -64,7 +64,7 @@ function Header() {
                     </Grid>
                 </Box>
                 <Grid xs={12} md={12} lg={12}>
-                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '32px', paddingTop: !isDesktop ? '50px' : '' }}>Юнител групп ололт амжилтыг дэмждэг</div>
+                    <div style={{ textAlign: 'center', fontSize: !isDesktop ? '15px' : '32px', paddingTop: !isDesktop ? '50px' : '30px' }}>Юнител групп ололт амжилтыг дэмждэг</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
                     {isDesktop ? (
