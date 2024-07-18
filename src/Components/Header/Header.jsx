@@ -85,7 +85,7 @@ function Header() {
                         <div className='icon' onClick={handleScroll}>
                             <img src={SVGButton} alt="My Icon" width={70} height={70} />
                         </div>
-                        <Card sx={{ height: '100px', alignItems: 'flex-start', borderTopLeftRadius: '80px', borderTopRightRadius: '80px', display: 'flex', justifyContent: 'center', background: '#F6F6F6' }}>
+                        <Card sx={{ height: '100px', borderRadius: 0, alignItems: 'flex-start', borderTopLeftRadius: '60px', borderTopRightRadius: '60px', display: 'flex', justifyContent: 'center', background: '#F6F6F6' }}>
                             <div className='space' >
                             </div>
                         </Card>
