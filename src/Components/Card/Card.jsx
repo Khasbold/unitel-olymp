@@ -15,8 +15,6 @@ import buhIcon from '../../assets/wrestling-icon.svg';
 import shootingIcon from '../../assets/shooting-icon.svg';
 import boxingIcon from '../../assets/boxing-icon.svg';
 import bowIcon from '../../assets/bow-arrow-icon.svg';
-import back from '../../assets/back.png';
-import front from '../../assets/front.png';
 import Medal from '../MedalFinal2/MedalFinal2';
 import custStyled from "styled-components";
 import SvgIcon from '@mui/material/SvgIcon';
