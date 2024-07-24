@@ -1,17 +1,14 @@
 // src/SpinningModel.jsx
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 
-const SpinningModel = ({ modelPath, currentTab }) => {
+const SpinningModel = ({ modelPath }) => {
   const modelRef = useRef();
   const [positionZ, setPositionZ] = useState(0); // Start position behind the camera
   const [rotationY, setRotationY] = useState(0); // Start rotation
   const [stage, setStage] = useState(0); // Track the stages of the animation
-  // const [scene, setScene] = useState(useGLTF(localStorage.getItem('currentMedal') ? localStorage.getItem('currentMedal') : '1968.glb').scene);
-  // localStorage.getItem('currentMedal') ? localStorage.getItem('currentMedal') : ''
   let { scene } = useGLTF(modelPath);
-  // Variable SCENE is Loaded 3D model
   // Animate the model
   useFrame(() => {
     if (modelRef.current) {

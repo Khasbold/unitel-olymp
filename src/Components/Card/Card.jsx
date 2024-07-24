@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Card.css';
-import { Stack, Grid, Card, Icon, Button } from '@mui/material';
+import { Stack, Grid, Button } from '@mui/material';
 import styled from 'styled-components';
 import useResponsive from '../useResponsive';
 import Medal1968 from '../../assets/Medal-1968.svg';
@@ -124,7 +124,6 @@ const Tabs = () => {
         window.open('https://link.unitel.mn/xxqa4', '_blank').focus();
     };
     const isDesktop = useResponsive('up', 'lg');
-    const [isFlipped, setIsFlipped] = useState(false);
     return (
         <>
             <Wrap >
@@ -415,7 +414,6 @@ const Tabs = () => {
                                 backgroundColor: '#24a93f', // hover background color
                             },
                             textTransform: 'none', fontFamily: 'Manrope, sans-serif', borderRadius: '40px', textColor: 'white', backgroundColor: '#53CE53',
-                            // paddingTop: '10px !important',
                             padding: '10px',
                             paddingLeft: '30px',
                             paddingRight: '30px',

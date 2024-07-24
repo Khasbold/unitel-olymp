@@ -8,14 +8,6 @@ import SVGButton from '../../assets/button.svg';
 function Header() {
     const isDesktop = useResponsive('up', 'lg');
     const targetRef = useRef(null);
-    const style = {
-        // position: "relative",
-        height: "80px",
-        borderTopLeftRadius: '80px',
-        borderTopRightRadius: '80px',
-        backgroundColor: "#F6F6F6",
-        maskImage: "radial-gradient(60px at 50% 0, transparent 100%, white)",
-    };
     const smoothScrollTo = (endPos, duration) => {
         const startPos = window.pageYOffset;
         const distance = endPos - startPos;
@@ -74,13 +66,12 @@ function Header() {
                     )}
                 </Grid>
                 <Grid xs={12} md={12} lg={12} >
-                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид өнөөг хүртэл Олимпын түүхэндээ нийт 5 спортын төрлүүдээр амжилт гаргаж байв.</div>
+                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид Олимпын түүхэндээ чамгүй амжилт гаргасан.</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
-                    <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Тэгвэл анхны гэх тодотголтой Олимпын медалиудтай хамтдаа танилцацгаая</div>
+                    <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Спортын төрөл бүрээс амжилт гаргасан анхны таван медальтай хамтдаа танилцъя</div>
                 </Grid>
                 <Box sx={{ width: '100%' }} ref={targetRef}>
-                    {/* <Grid xs={12} md={12} lg={12}> */}
                     <div style={{ textAlign: 'center' }}>
                         <div className='icon' onClick={handleScroll}>
                             <img src={SVGButton} alt="My Icon" width={70} height={70} />
@@ -89,15 +80,6 @@ function Header() {
                             <div className='space' >
                             </div>
                         </Card>
-                        {/* <div style={{ textAlign: "center", cursor: 'pointer' }} onClick={handleScroll}>
-                            <img
-                                style={{ marginBottom: "-40px" }}
-                                src={SVGButton}
-                                width={70}
-                                height={70}
-                            />
-                            <div style={style}></div>
-                        </div> */}
                         <div style={{ background: '#F6F6F6', alignItems: 'flex-start', textAlign: 'center' }}>
                             <Grid container>
                                 <Grid xs={1} md={1} lg={1} >
@@ -110,7 +92,6 @@ function Header() {
                             </Grid>
                         </div>
                     </div>
-                    {/* </Grid> */}
                 </Box >
             </div>
         </>
