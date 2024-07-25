@@ -66,10 +66,10 @@ function Header() {
                     )}
                 </Grid>
                 <Grid xs={12} md={12} lg={12} >
-                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид Олимпын түүхэндээ чамгүй амжилт гаргасан.</div>
+                    <div style={{ textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white', paddingTop: !isDesktop ? '340px' : '500px' }}>Бид Олимпын түүхэндээ багагүй амжилт үзүүлсэн.</div>
                 </Grid>
                 <Grid xs={12} md={12} lg={12}>
-                    <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Спортын төрөл бүрээс амжилт гаргасан анхны таван медальтай хамтдаа танилцъя</div>
+                    <div style={{ paddingBottom: '20px', textAlign: 'center', paddingLeft: !isDesktop ? '40px' : '0px', paddingRight: !isDesktop ? '40px' : '0px', fontSize: !isDesktop ? '15px' : '24px', color: 'white' }}>Спортын төрөл бүрээс амжилтын гарааг эхлүүлсэн анхны таван медальтай хамтдаа танилцъя</div>
                 </Grid>
                 <Box sx={{ width: '100%' }} ref={targetRef}>
                     <div style={{ textAlign: 'center' }}>
